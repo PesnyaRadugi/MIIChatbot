@@ -7,7 +7,9 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import io.project.MIIChatbot.config.BotConfig;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Component
 public class TelegramBot extends TelegramLongPollingBot{
 
@@ -40,6 +42,7 @@ public class TelegramBot extends TelegramLongPollingBot{
                     break;       
                 default:
                     sendMessage(chatId, "Command is not recognized, try again");
+                    log.error("User " + update.getMessage().getChat().getFirstName() + " used invalid command");
                     break;
             }
         }
@@ -47,6 +50,7 @@ public class TelegramBot extends TelegramLongPollingBot{
 
     private void startMessage(long chatId, String firstName) {
         String answer = "Hey there, " + firstName + ", nice to see you!";
+        log.info("Replied to user " + firstName);
 
         sendMessage(chatId, answer);
     }
@@ -60,7 +64,7 @@ public class TelegramBot extends TelegramLongPollingBot{
         try {
             execute(message);
         } catch (TelegramApiException e) {
-            e.printStackTrace();
+            log.error("Error occured", e.getMessage());
         }
     
     }
