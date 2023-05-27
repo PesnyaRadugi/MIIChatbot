@@ -1,9 +1,15 @@
 package io.project.MIIChatbot.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
+import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
+import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScopeDefault;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import io.project.MIIChatbot.config.BotConfig;
@@ -17,6 +23,17 @@ public class TelegramBot extends TelegramLongPollingBot{
     
     public TelegramBot(BotConfig config) {
         this.config = config;
+        List<BotCommand> botCommands = new ArrayList<>();
+
+        botCommands.add(new BotCommand("/start", "Получить приветственное сообщение"));
+        botCommands.add(new BotCommand("/help", "Список команд и информация о боте"));
+
+        try {
+            execute(new SetMyCommands(botCommands, new BotCommandScopeDefault(), null));
+        } catch (TelegramApiException e) {
+            log.error("Error setting bot commands: " + e.getMessage());
+        }
+    
     }
 
     @Override

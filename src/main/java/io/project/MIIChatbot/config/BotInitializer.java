@@ -9,7 +9,9 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 import io.project.MIIChatbot.service.TelegramBot;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Component
 public class BotInitializer {
     
@@ -23,7 +25,7 @@ public class BotInitializer {
         try {
             telegramBotsApi.registerBot(bot);
         } catch (TelegramApiException e) {
-            e.printStackTrace();
+            log.error("Error initializing bot: " + e.getMessage());
         }
     }
 }
