@@ -6,7 +6,7 @@
   </appender>
 
   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>C:\Users\Max\Desktop\BotLogs.log</file>
+    <file>BotLogs\BotLogs.log</file>
     <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
       <fileNamePattern>logs/mylog.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
       <maxFileSize>10MB</maxFileSize>

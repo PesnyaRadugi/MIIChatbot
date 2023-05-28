@@ -1,0 +1,24 @@
+2023-05-27 11:30:27,479 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 12864 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-27 11:30:27,483 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-27 11:30:29,739 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.678 seconds (process running for 3.552)
+2023-05-27 11:31:14,511 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent form file to user: Song_of_Rainbow
+2023-05-27 11:32:14,575 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-27 11:32:14,746 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-27 11:32:15,361 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 1684 (started by Max in D:\Repos\MIIChatbot)
+2023-05-27 11:32:15,363 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-27 11:32:17,592 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 2.588 seconds (process running for 4.077)
+2023-05-27 11:41:27,072 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-27 11:41:27,199 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-27 11:41:27,859 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 564 (started by Max in D:\Repos\MIIChatbot)
+2023-05-27 11:41:27,861 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-27 11:41:30,336 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 2.863 seconds (process running for 4.394)
+2023-05-27 11:44:35,199 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-27 11:44:35,336 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-27 11:44:35,946 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 12764 (started by Max in D:\Repos\MIIChatbot)
+2023-05-27 11:44:35,948 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-27 11:44:37,905 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 2.294 seconds (process running for 3.628)
+2023-05-27 12:16:20,406 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-27 12:16:20,610 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-27 12:16:21,204 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 15224 (started by Max in D:\Repos\MIIChatbot)
+2023-05-27 12:16:21,206 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-27 12:16:23,690 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 2.858 seconds (process running for 4.729)

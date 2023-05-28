@@ -1,9 +1,0 @@
-2023-05-16 17:24:11,269 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 12156 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
-2023-05-16 17:24:11,273 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
-2023-05-16 17:24:13,704 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.838 seconds (process running for 3.479)
-2023-05-16 17:24:14,280 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
-2023-05-16 17:32:51,317 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
-2023-05-16 17:34:35,716 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 16692 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
-2023-05-16 17:34:35,721 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
-2023-05-16 17:34:38,062 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.753 seconds (process running for 3.514)
-2023-05-16 17:34:54,168 [MIIChat_bot Telegram Executor] ERROR i.p.MIIChatbot.service.TelegramBot - User Song_of_Rainbow used invalid command
