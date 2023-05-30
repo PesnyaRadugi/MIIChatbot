@@ -26,3 +26,112 @@
 2023-05-30 15:02:53,377 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
 2023-05-30 15:02:58,074 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 5.923 seconds (process running for 7.426)
 2023-05-30 15:02:58,748 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:12:05,781 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 12728 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:12:05,787 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:12:10,037 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 5.18 seconds (process running for 6.925)
+2023-05-30 15:12:10,758 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:19:14,764 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 12604 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:19:14,776 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:19:19,848 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 6.017 seconds (process running for 7.671)
+2023-05-30 15:19:36,464 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-30 15:19:45,120 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:20:41,024 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 2108 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:20:41,057 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:20:46,306 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 6.422 seconds (process running for 8.311)
+2023-05-30 15:20:48,419 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 9804 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:20:48,431 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:20:53,034 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 5.517 seconds (process running for 7.272)
+2023-05-30 15:20:53,767 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:20:54,333 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-30 15:20:54,440 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-30 15:20:57,586 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:20:58,254 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:01,440 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:21:01,913 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:02,547 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:03,906 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:21:06,223 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:06,892 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:10,570 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:11,210 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:14,874 [MIIChat_bot Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+2023-05-30 15:21:24,043 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 17620 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:21:24,050 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:21:28,903 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 5.672 seconds (process running for 7.181)
+2023-05-30 15:21:29,738 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-30 15:21:32,813 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:27:18,145 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 2932 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:27:18,161 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:27:24,715 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 8.599 seconds (process running for 10.604)
+2023-05-30 15:27:25,696 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-30 15:27:29,843 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:27:33,887 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:28:03,801 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 18924 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:28:03,808 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:28:07,970 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 5.062 seconds (process running for 6.451)
+2023-05-30 15:28:10,238 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!
+2023-05-30 15:42:05,675 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 1320 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-30 15:42:05,682 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-30 15:42:10,409 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 5.593 seconds (process running for 7.237)
+2023-05-30 15:42:14,053 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-30 15:42:18,822 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!

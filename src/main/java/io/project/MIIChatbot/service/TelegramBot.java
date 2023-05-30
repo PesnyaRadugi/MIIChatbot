@@ -70,13 +70,14 @@ public class TelegramBot extends TelegramLongPollingBot{
                     startMessage(chatId, update.getMessage().getChat().getFirstName());
                     break;  
                 case "/form":
-                    sendFormToUser(chatId);
+                    sendPresentationFormToUser(chatId);
                     break;
                 default:
                     defaultMessage(chatId);
                     log.error("User " + update.getMessage().getChat().getFirstName() + " used invalid command");
                     break;
             }
+
         } else if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
             String callbackData = callbackQuery.getData();
@@ -88,6 +89,15 @@ public class TelegramBot extends TelegramLongPollingBot{
                     break;
                 case Const.SIGN_IN:
                     signInToStudio(chatId);;
+                    break;
+                case Const.SIGNIN_PREPARATION:
+                    giveAdvice(chatId);
+                    break;
+                case Const.GET_PRESENTATION_INSTRUCTION:
+                    presentationMenu(chatId);
+                    break;
+                case Const.NEED_HELP:
+                
                     break;
             }
 
@@ -119,7 +129,7 @@ public class TelegramBot extends TelegramLongPollingBot{
 
             Нажмите “Записаться в видеостудию”, если Вы уже ознакомились со всеми организационными моментами и готовы действовать
             
-            Если у Вас остались вопросы, запросите помощь администратора.            
+            Если у Вас остались вопросы, запросите помощь администратора.
             """;
 
         log.info("Replied to user " + firstName);
@@ -129,6 +139,11 @@ public class TelegramBot extends TelegramLongPollingBot{
 
     private void speakersInstructions(long chatId) {
         
+        HashMap<String, String> buttons = new HashMap<>();
+        buttons.put("Нужна помощь", Const.NEED_HELP);
+        buttons.put("Работа с презентацией", Const.GET_PRESENTATION_INSTRUCTION);
+        buttons.put("Подготовка к записи", Const.SIGNIN_PREPARATION);
+
         String reply = """
             Краткая инструкция:
             1. Определитесь с темой для записи и подготовьте презентацию. Шаблон вы найдете в отделе “работа с презентацией” . Обратите внимание, мы записываем презентации, подготовленные строго по шаблону. Презентация не должна быть слишком длинной, одна готовая запись длится ХХ минут
@@ -146,13 +161,31 @@ public class TelegramBot extends TelegramLongPollingBot{
             """;
         
         log.info("Sent speaker instructions!");
+        sendMessage(chatId, reply, generateInlineKeyboard(buttons));
+    }
+
+    private void giveAdvice(long chatId) {
+
+        String reply = """
+            Мы убеждены, что каждый преподаватель МИИГАиК - уже настоящая звезда. А чтобы сиять на видеолекции еще ярче, мы подготовили для Вас некоторые рекомендации:
+            
+            1. Запись проходит на белом фоне, поэтому не надевайте белую одежду. Также откажитесь от мелких принтов в пользу однотонной одежды.
+            
+            2. В день записи проведите с утра речевые разминки: чистоговорки, скороговорки, упражнения для интонации и дикции. Мы не отрицаем Ваше ораторское мастерство, но аппаратура студии может значительно усилить недостатки речи. Советуем также сделать зарядку для отсутствия скованности в кадре
+            
+            3. Не волнуйтесь: Вас поддержит режиссер студии, имеющий более 30 лет опыта руководством театра. Запись проходит в спокойной атмосфере.
+            
+            4. Настройтесь на успех. Вы - профессионал своего дела! 
+            """;
+
+        log.info("Sent advice to user!");
         sendMessage(chatId, reply);
     }
 
     private void signInToStudio(long chatId) {
         HashMap<String, String> buttons = new HashMap<>();
-        buttons.put("Нет", Const.NO_DIDNT_READ_INSTRUCTIONS);
         buttons.put("Да", Const.YES_READ_INSTRUCTIONS);
+        buttons.put("Нет", Const.NO_DIDNT_READ_INSTRUCTIONS);
 
         String reply = """
             Вы ознакомились с информацией для спикеров ?
@@ -162,7 +195,19 @@ public class TelegramBot extends TelegramLongPollingBot{
         sendMessage(chatId, reply, generateInlineKeyboard(buttons));
     }
 
-    private void sendFormToUser(Long chatId) {
+    private void presentationMenu(long chatId) {
+        HashMap<String, String> buttons = new HashMap<>();
+        buttons.put("Скачать шаблон презентации", "Download_presentation_form");
+        buttons.put("Загрузить презнтацию", "Upload_presentation");
+
+        String reply = """
+            В этом разделе Вы можете скачать шаблон презентации и загрузить готовую. Обратите внимание, мы записываем презентации, подготовленные строго по шаблону.    
+            """;
+
+        sendMessage(chatId, reply, generateInlineKeyboard(buttons));
+    }
+
+    private void sendPresentationFormToUser(Long chatId) {
         File formFolder = new File(FORM_FOLDER_PATH);
         File[] files = formFolder.listFiles();
 
