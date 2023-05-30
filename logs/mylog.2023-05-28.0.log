@@ -1,0 +1,74 @@
+2023-05-28 12:36:47,924 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-28 12:36:48,127 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-28 12:36:48,815 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 10740 (started by Max in D:\Repos\MIIChatbot)
+2023-05-28 12:36:48,818 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 12:36:51,984 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 3.599 seconds (process running for 5.306)
+2023-05-28 12:36:52,592 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 12:41:27,303 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 16004 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 12:41:27,307 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 12:41:30,159 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 3.207 seconds (process running for 4.175)
+2023-05-28 12:41:30,609 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 12:44:39,125 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 9700 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 12:44:39,129 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 12:44:41,488 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.759 seconds (process running for 3.563)
+2023-05-28 12:44:50,732 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 12:47:55,865 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 17576 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 12:47:55,869 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 12:47:58,175 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.811 seconds (process running for 3.607)
+2023-05-28 12:48:01,430 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 12:48:37,033 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 18452 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 12:48:37,037 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 12:48:39,164 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.558 seconds (process running for 3.334)
+2023-05-28 12:48:41,327 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 14:04:18,602 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-28 14:04:18,732 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-28 14:04:19,370 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 17796 (started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:04:19,372 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:04:21,791 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 2.817 seconds (process running for 4.254)
+2023-05-28 14:08:47,335 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-28 14:08:47,483 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-28 14:08:48,035 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 17576 (started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:08:48,038 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:08:50,812 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 3.137 seconds (process running for 4.496)
+2023-05-28 14:10:27,229 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 19436 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:10:27,239 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:10:31,321 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 4.889 seconds (process running for 6.018)
+2023-05-28 14:10:32,167 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 14:10:33,524 [MIIChat_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getChatId()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getChatId()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+	at io.project.MIIChatbot.service.TelegramBot.onUpdateReceived(TelegramBot.java:61)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312)
+2023-05-28 14:11:10,807 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 14756 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:11:10,812 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:11:13,762 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 3.392 seconds (process running for 4.155)
+2023-05-28 14:11:21,040 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 14:11:22,369 [MIIChat_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getChatId()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+java.lang.NullPointerException: Cannot invoke "org.telegram.telegrambots.meta.api.objects.Message.getChatId()" because the return value of "org.telegram.telegrambots.meta.api.objects.Update.getMessage()" is null
+	at io.project.MIIChatbot.service.TelegramBot.onUpdateReceived(TelegramBot.java:61)
+	at java.base/java.util.ArrayList.forEach(Unknown Source)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312)
+2023-05-28 14:14:44,726 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 1080 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:14:44,730 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:14:47,928 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 3.636 seconds (process running for 4.524)
+2023-05-28 14:15:22,209 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 19792 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:15:22,212 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:15:40,209 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [io.project.MIIChatbot.MiiChatbotApplicationTests]: MiiChatbotApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-28 14:15:40,336 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration io.project.MIIChatbot.MiiChatbotApplication for test class io.project.MIIChatbot.MiiChatbotApplicationTests
+2023-05-28 14:15:40,883 [main] INFO  i.p.M.MiiChatbotApplicationTests - Starting MiiChatbotApplicationTests using Java 17.0.6 with PID 12032 (started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:15:40,885 [main] INFO  i.p.M.MiiChatbotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:15:43,067 [main] INFO  i.p.M.MiiChatbotApplicationTests - Started MiiChatbotApplicationTests in 2.521 seconds (process running for 3.834)
+2023-05-28 14:48:26,561 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 3996 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:48:26,567 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:48:29,016 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.917 seconds (process running for 3.816)
+2023-05-28 14:48:45,414 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 17380 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:48:45,418 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:48:47,669 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 2.667 seconds (process running for 3.455)
+2023-05-28 14:48:53,221 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 14:49:16,986 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Starting MiiChatbotApplication using Java 17.0.7 with PID 18496 (D:\Repos\MIIChatbot\target\classes started by Max in D:\Repos\MIIChatbot)
+2023-05-28 14:49:16,989 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-28 14:49:19,700 [main] INFO  i.p.MIIChatbot.MiiChatbotApplication - Started MiiChatbotApplication in 3.153 seconds (process running for 3.94)
+2023-05-28 14:49:23,768 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Replied to user Song_of_Rainbow
+2023-05-28 14:49:25,523 [MIIChat_bot Telegram Executor] INFO  i.p.MIIChatbot.service.TelegramBot - Sent speaker instructions!

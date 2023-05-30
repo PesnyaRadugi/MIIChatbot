@@ -2,7 +2,9 @@ package io.project.MIIChatbot.service;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -82,10 +84,10 @@ public class TelegramBot extends TelegramLongPollingBot{
 
             switch (callbackData) {
                 case Const.GET_INSTRUCTIONS:
-                    defaultMessage(chatId);
+                    speakersInstructions(chatId);
                     break;
                 case Const.SIGN_IN:
-                    sendFormToUser(chatId);
+                    signInToStudio(chatId);;
                     break;
             }
 
@@ -101,25 +103,11 @@ public class TelegramBot extends TelegramLongPollingBot{
     }
 
     private void startMessage(long chatId, String firstName) {
-        // Inline keyboard controls
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> keyboardRows = new ArrayList<>();
-
-        List<InlineKeyboardButton> firstRow = new ArrayList<>();
-        InlineKeyboardButton instructionsButton = new InlineKeyboardButton();
-        instructionsButton.setText("Получить инструкции для спикеров");
-        instructionsButton.setCallbackData(Const.GET_INSTRUCTIONS);
-        firstRow.add(instructionsButton);
-
-        List<InlineKeyboardButton> secondRow = new ArrayList<>();
-        InlineKeyboardButton signInButton = new InlineKeyboardButton();
-        signInButton.setText("Записаться в видеостудию");
-        signInButton.setCallbackData(Const.SIGN_IN);
-        secondRow.add(signInButton);
-
-        keyboardRows.add(firstRow);
-        keyboardRows.add(secondRow);
-        inlineKeyboardMarkup.setKeyboard(keyboardRows);
+        
+        // Generate Button
+        HashMap<String, String> buttons = new HashMap<>();
+        buttons.put("Записаться в видеостудию", Const.SIGN_IN);
+        buttons.put("Получить инструкции для спикеров", Const.GET_INSTRUCTIONS);
 
         // Message part
         String reply = """
@@ -132,10 +120,46 @@ public class TelegramBot extends TelegramLongPollingBot{
             Нажмите “Записаться в видеостудию”, если Вы уже ознакомились со всеми организационными моментами и готовы действовать
             
             Если у Вас остались вопросы, запросите помощь администратора.            
-                """;
+            """;
+
         log.info("Replied to user " + firstName);
 
-        sendMessage(chatId, reply, inlineKeyboardMarkup);
+        sendMessage(chatId, reply, generateInlineKeyboard(buttons));
+    }
+
+    private void speakersInstructions(long chatId) {
+        
+        String reply = """
+            Краткая инструкция:
+            1. Определитесь с темой для записи и подготовьте презентацию. Шаблон вы найдете в отделе “работа с презентацией” . Обратите внимание, мы записываем презентации, подготовленные строго по шаблону. Презентация не должна быть слишком длинной, одна готовая запись длится ХХ минут
+            
+            2. Отправьте презентацию с помощью этого бота, после чего Вы сможете оформить запись.
+            
+            3. Подготовьтесь к записи (с советами вы можете ознакомиться в соответствующем разделе). Приходите вовремя или заранее предупредите администратора об опоздании или переносе записи
+            
+            4. Проведите запись. Не волнуйтесь, наш опытный режиссер поможет вам настроиться, также видеостудия оснащена суфлером. Готовую запись вы получите после двух этапов монтажа - это займет около ХХ дней
+            
+            5. С регламентом работы Вы можете ознакомиться в прикрепленном документе
+            
+            6. Если у Вас остались вопросы, запросите помощь.
+           
+            """;
+        
+        log.info("Sent speaker instructions!");
+        sendMessage(chatId, reply);
+    }
+
+    private void signInToStudio(long chatId) {
+        HashMap<String, String> buttons = new HashMap<>();
+        buttons.put("Нет", Const.NO_DIDNT_READ_INSTRUCTIONS);
+        buttons.put("Да", Const.YES_READ_INSTRUCTIONS);
+
+        String reply = """
+            Вы ознакомились с информацией для спикеров ?
+            """;
+        
+        log.info("Sent speaker instructions!");
+        sendMessage(chatId, reply, generateInlineKeyboard(buttons));
     }
 
     private void sendFormToUser(Long chatId) {
@@ -202,6 +226,26 @@ public class TelegramBot extends TelegramLongPollingBot{
             log.error("Error occured:", e.getMessage());
         }
     
+    }
+
+    private InlineKeyboardMarkup generateInlineKeyboard(HashMap<String, String> buttons) {
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> keyboardRows = new ArrayList<>();
+
+        for (Map.Entry<String, String> entry : buttons.entrySet()) {
+            List<InlineKeyboardButton> row = new ArrayList<>();
+            InlineKeyboardButton button = new InlineKeyboardButton();
+
+            button.setText(entry.getKey());
+            button.setCallbackData(entry.getValue());
+            row.add(button);
+
+            keyboardRows.add(row);
+        }
+
+        inlineKeyboardMarkup.setKeyboard(keyboardRows);
+
+        return inlineKeyboardMarkup;
     }
 
 }
